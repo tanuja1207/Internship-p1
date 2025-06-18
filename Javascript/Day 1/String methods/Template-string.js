@@ -8,7 +8,6 @@ let first_name= "Tanuja";
 let about_me = "My name is "+first_name+ " and my age is " + age;
 console.log(about_me);
 
-// ---------------------------------------------------
 // other method
 // template strings 
 

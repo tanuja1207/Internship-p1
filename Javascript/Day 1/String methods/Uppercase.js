@@ -1,7 +1,7 @@
 
 // ############## toUpperCase method ##############
 
-let first_name = "tanujakadam";
+let first_name = "TANUJAkadam";
 
 first_name=first_name.toUpperCase();
 console.log(first_name);

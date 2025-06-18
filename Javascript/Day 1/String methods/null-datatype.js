@@ -1,22 +1,25 @@
 
 // ################# null data type ################
 
-let myvar = null;
-console.log(myvar); 
-console.log(typeof myvar,myvar); 
-myvar = "uadasfa";
-console.log(typeof myvar,myvar); 
+let variable = null;
+console.log(variable); 
+console.log(typeof variable,variable); 
+
+variable = "Tanuja";
+console.log(typeof variable,variable); 
+
 let mynull = null;
 console.log(typeof mynull); 
+// bug , error
 
 
 
 
 // #################### BigInt ################
 
-let mynum = 123;
+let no = 123;
 
-console.log(mynum);
+console.log(no);
 console.log(Number.MAX_SAFE_INTEGER);
 
 // declaring big int

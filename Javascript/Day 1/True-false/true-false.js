@@ -1,4 +1,4 @@
-
+// try all false values and true to see output
 let firstname;
 if(firstname){
     console.log(firstName);
