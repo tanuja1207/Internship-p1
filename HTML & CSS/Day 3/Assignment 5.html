@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Margin Collapsing</title>
+  <style>
+    div {
+      margin-bottom: 30px;
+      margin-top: 50px;
+      background-color: lightblue;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div>
+ 
+    This is the first div.
+  </div>
+
+  <div>
+
+    This is the second div.
+  </div>
+
+<!--Explain in a comment how only the larger margin is applied due to margin collapsing.-->
+<!--The top and bottom margins of blocks are sometimes combined (collapsed) into a single margin whose size is the largest of the individual margins (or just one of them, if they are equal), a behavior known as margin collapsing.-->
+
+</p>
+</body>
+</html>

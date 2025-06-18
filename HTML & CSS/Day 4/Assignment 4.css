@@ -1,0 +1,33 @@
+/* Justified heading */
+.justify-heading {
+  text-align: justify;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Paragraph alignments */
+.text-container p {
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.right-align {
+  text-align: right;
+}
+
+/* Note styling */
+.note {
+  margin-top: 30px;
+  padding: 10px;
+  background-color: #f0f8ff;
+  border-left: 4px solid #007acc;
+  font-size: 16px;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Cards</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 100%;
+      max-width: 300px;
+      text-align: center;
+      text-decoration: none;
+      color: inherit;
+      transition: box-shadow 0.3s ease;
+      background-color: white;
+    }
+
+    .card:hover {
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .card-text {
+      padding: 15px;
+    }
+
+    @media (min-width: 600px) {
+      .card {
+        width: calc(50% - 20px);
+      }
+    }
+
+    @media (min-width: 900px) {
+      .card {
+        width: calc(33.333% - 20px);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card-container">
+    <a href="https://www.meesho.com/womens-soft-net-sequins-work-semi-stitched-new-black-lehenga-choli-with-dupatta/p/51oqbz" class="card">
+      <img src="P1.jpg" alt="Product 1">
+      <div class="card-text">
+        <h3>Product 1</h3>
+        <p>Lehenga</p>
+      </div>
+    </a>
+
+    <a href="https://www.meesho.com/black-sitara-sequins-sarees-bollywood-hit-design-partywear-saree-black-fancy-saree/p/92jkq0" class="card">
+      <img src="P2.jpg" alt="Product 2">
+      <div class="card-text">
+        <h3>Product 2</h3>
+        <p>Saree</p>
+      </div>
+    </a>
+
+    <a href="https://www.meesho.com/women-printed-fit-flare-dress/p/87egpi" class="card">
+      <img src="P3.jpg" alt="Product 3">
+      <div class="card-text">
+        <h3>Product 3</h3>
+        <p>Western</p>
+      </div>
+    </a>
+  </div>
+
+</body>
+</html>

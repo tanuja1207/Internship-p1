@@ -1,0 +1,20 @@
+.pizza-menu {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff3e0;
+  padding: 20px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 20px;
+  border: 2px dashed tomato;
+}
+
+.pizza-menu a {
+  text-decoration: none;
+  color: #d84315;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.pizza-menu a:hover {
+  transform: scale(1.1);
+}

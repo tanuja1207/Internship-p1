@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #bad1e5;
+}
+
+.lost-box {
+  padding: 30px 50px;
+  background-color: #ce5fc1;
+  color: white;
+  font-size: 24px;
+  font-family: sans-serif;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}

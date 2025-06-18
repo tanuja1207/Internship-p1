@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Display Types: Inline, Block, Inline-block</title>
+  <style>
+    .btn-inline {
+      display: inline;
+      border: 2px solid red;
+      padding: 10px;
+      background-color: #fdd;
+    }
+
+    .btn-block {
+      display: block;
+      border: 2px solid green;
+      padding: 10px;
+      background-color: #dfd;
+    }
+
+    .btn-inline-block {
+      display: inline-block;
+      border: 2px solid blue;
+      padding: 10px;
+      background-color: #ddf;
+    }
+
+    .container {
+      background: #eee;
+      padding: 20px;
+    }
+
+    .note {
+      margin-top: 30px;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <span class="btn-inline">Inline Button</span>
+    <div class="btn-block">Block Button</div>
+    <span class="btn-inline-block">Inline-Block Button</span>
+  </div>
+
+  <div class="note">
+    <h3>Difference between Inline and Block Elements:</h3>
+    <p>
+      <strong>Inline elements</strong> do not start on a new line and only take up as much width as necessary.
+      They do not respect vertical dimensions like height and margin-top/bottom.
+    </p>
+    <p>
+      <strong>Block elements</strong> start on a new line and take up the full width of their container.
+      They respect all box model properties (margin, padding, width, height).
+    </p>
+  </div>
+</body>
+</html>

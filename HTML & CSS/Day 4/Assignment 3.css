@@ -1,0 +1,27 @@
+
+.parent {
+  font-size: 18px;         
+  color: #2c3e50;            
+  border: 2px solid #3498db; 
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+
+table {
+  width: 60%;
+  border-collapse: collapse; 
+  font-size: 16px;           
+  color: #34495e;            
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #333;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f0f0f0;
+}
