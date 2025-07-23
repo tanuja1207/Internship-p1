@@ -1,0 +1,40 @@
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: #fefae0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.glass {
+  width: 150px;
+  height: 300px;
+  border: 5px solid #555;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: inset 0 0 10px #ccc;
+}
+
+.juice {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(234, 135, 5);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  animation: fillJuice 4s ease-in-out forwards;
+}
+
+@keyframes fillJuice {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}

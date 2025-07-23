@@ -1,0 +1,23 @@
+
+.candy-list {
+  list-style-type: none;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.candy-list li {
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+.candy-list li:first-child {
+  background-color: #ffe4e1;
+  color: #d6006e;
+  font-weight: bold;
+}
+
+.candy-list li:first-child::after{
+  content: "🍬 ";
+}

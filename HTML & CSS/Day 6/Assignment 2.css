@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-image: url("https://www.lchangnang.com/blog/wp-content/uploads/2023/02/nubra-valley-night-sky.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  overflow: hidden;
+  
+}
+
+
+.launch-pad {
+  position: relative;
+  cursor: pointer;
+}
+
+.rocket {
+  display: inline-block;
+  transition: transform 1.2s ease-in;
+}
+
+.rocket:active {
+  animation: launch 1.2s ease-in forwards;
+}
+
+@keyframes launch {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-300px) scale(1.1);
+  }
+  100% {
+    transform: translateY(-600px) scale(0.8);
+    opacity: 0;
+  }
+}

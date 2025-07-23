@@ -1,0 +1,49 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.mood-box {
+  width: 100%;
+  height: 100vh;
+  background-color: #a9cef7; 
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+
+.mood-box::after {
+  content: "Feeling Cool and Calm 💙";
+  font-size: 2rem;
+  color: white;
+  position: absolute;
+  text-align: center;
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+  .mood-box {
+    background-color: #e88fc0; /* Yellow */
+  }
+
+  .mood-box::after {
+    content: "Feeling Bright and Cheerful ☀️";
+    color: #333;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 480px) {
+  .mood-box {
+    background-color: #FF4C4C; /* Red */
+  }
+
+  .mood-box::after {
+    content: "Feeling Bold and Energetic 🔥";
+    color: white;
+  }
+}

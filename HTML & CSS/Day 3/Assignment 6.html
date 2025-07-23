@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Inline and Block-Level Elements</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h2 {
+      margin-top: 40px;
+    }
+
+    .inline-section span,
+    .inline-section a,
+    .inline-section strong {
+      border: 2px solid blue;
+      padding: 5px;
+      margin: 5px;
+      background-color: #e0f7ff;
+    }
+
+
+    .block-section div,
+    .block-section p,
+    .block-section h1 {
+      border: 2px solid green;
+      padding: 10px;
+      margin: 10px 0;
+      background-color: #e5ffe5;
+    }
+
+    .converted-inline div,
+    .converted-inline p,
+    .converted-inline h1 {
+      display: inline;
+      border: 2px dashed red;
+      background-color: #ffe0e0;
+    }
+
+    .converted-block span,
+    .converted-block a,
+    .converted-block strong {
+      display: block;
+      border: 2px dashed orange;
+      background-color: #fff4e0;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Section 1: Inline Elements (default)</h2>
+  <div class="inline-section">
+    <span>Inline Span</span>
+    <a href="#">Inline Anchor</a>
+    <strong>Inline Strong</strong>
+  </div>
+
+  <h2>Section 2: Block Elements (default)</h2>
+  <div class="block-section">
+    <div>Block Div</div>
+    <p>Block Paragraph</p>
+    <h1>Block Heading</h1>
+  </div>
+
+  <h2>Bonus 1: Block Elements Converted to Inline</h2>
+  <div class="block-section converted-inline">
+    <div>Div (inline)</div>
+    <p>Paragraph (inline)</p>
+    <h1>Heading (inline)</h1>
+  </div>
+
+  <h2>Bonus 2: Inline Elements Converted to Block</h2>
+  <div class="inline-section converted-block">
+    <span>Span (block)</span>
+    <a href="#">Anchor (block)</a>
+    <strong>Strong (block)</strong>
+  </div>
+
+</body>
+</html>

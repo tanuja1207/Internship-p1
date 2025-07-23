@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  background-color: #f0f0f0;
+}
+
+.container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  border: 2px solid #333;
+}
+
+
+.box {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 20px;
+  left: 20px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.box1 {
+  background-color: rgba(231, 76, 60, 0.8); /* Red */
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+}
+
+.box2 {
+  background-color: rgba(46, 204, 113, 0.8); /* Green */
+  top: 60px;
+  left: 60px;
+  z-index: 2;
+}
+
+.box3 {
+  background-color: rgba(52, 152, 219, 0.8); /* Blue */
+  top: 100px;
+  left: 100px;
+  z-index: -;
+}

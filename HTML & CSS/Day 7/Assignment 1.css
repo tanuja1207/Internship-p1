@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.robot {
+  position: relative;
+  width: 100px;
+  height: 200px;
+}
+
+.head, .body, .arm, .leg {
+  position: absolute;
+  background-color: #4caf50;
+  border: 2px solid #fff;
+  box-sizing: border-box;
+}
+
+/* Head */
+.head {
+  width: 60px;
+  height: 60px;
+  top: 0;
+  left: 20px;
+  background-color: #e91e63;
+}
+
+/* Body */
+.body {
+  width: 100px;
+  height: 80px;
+  top: 60px;
+  background-color: #2196f3;
+}
+
+/* Arms */
+.arm {
+  width: 20px;
+  height: 60px;
+  top: 60px;
+  background-color: #ff9800;
+}
+.left-arm {
+  left: -20px;
+}
+.right-arm {
+  right: -20px;
+}
+
+/* Legs */
+.leg {
+  width: 20px;
+  height: 60px;
+  top: 140px;
+  background-color: #9c27b0;
+}
+.left-leg {
+  left: 20px;
+}
+.right-leg {
+  right: 20px;
+}
+
+@media (max-width: 600px) {
+  .robot {
+    transform: rotate(10deg);
+  }
+  .head {
+    transform: rotate(-30deg) translateY(-20px);
+  }
+  .left-arm {
+    transform: rotate(45deg) translate(-20px, 20px);
+  }
+  .right-arm {
+    transform: rotate(-45deg) translate(20px, 20px);
+  }
+  .left-leg {
+    transform: rotate(30deg) translateX(-15px);
+  }
+  .right-leg {
+    transform: rotate(-30deg) translateX(15px);
+  }
+}

@@ -1,0 +1,36 @@
+/* Page background and layout */
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #000000; /* Sky blue */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Crab image and animation */
+.crab {
+  width: 200px;
+  animation: crab-walk 4s ease-in-out infinite;
+  transform-origin: center;
+}
+
+/* Crab walking side-to-side with rotation */
+@keyframes crab-walk {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  25% {
+    transform: translateX(40px) rotate(10deg);
+  }
+  50% {
+    transform: translateX(80px) rotate(0deg);
+  }
+  75% {
+    transform: translateX(40px) rotate(-10deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+}
